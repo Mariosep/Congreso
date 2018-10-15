@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACN,gBAAgB,EAAE,OAAO;EAEzB,kBAAU;IACT,OAAO,EAAE,iBAAiB;EAG3B,eAAO;IACN,KAAK,EAAE,GAAG;IACV,eAAe,EAAE,KAAK;EAGvB,iBAAS;IACR,KAAK,EAAE,GAAG;EAGX,eAAO;IACN,KAAK,EAAE,GAAG",
+"sources": ["inscripcion.scss"],
+"names": [],
+"file": "inscripcion.css"
+}

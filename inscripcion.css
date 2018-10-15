@@ -1,0 +1,13 @@
+section {
+  background-color: #cbd3e2; }
+  section .display-4 {
+    padding: 80px 0px 60px 0px; }
+  section #person {
+    width: 50%;
+    backgroud-color: black; }
+  section #telefono {
+    width: 25%; }
+  section #correo {
+    width: 25%; }
+
+/*# sourceMappingURL=inscripcion.css.map */
