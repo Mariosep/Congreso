@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACN,gBAAgB,EAAE,OAAO;EAEzB,cAAM;IACL,gBAAgB,EAAE,OAAO;IAEzB,iBAAE;MACD,SAAS,EAAE,KAAK;IAGjB,iBAAE;MACD,OAAO,EAAE,mBAAmB;MAC5B,SAAS,EAAE,KAAK;EAIlB,kBAAU;IACT,OAAO,EAAE,iBAAiB",
+"sources": ["ponentes.scss"],
+"names": [],
+"file": "ponentes.css"
+}
