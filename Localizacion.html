@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
-  <link rel="stylesheet" type="text/css" href="Localizacion.css">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <style>
@@ -34,14 +34,20 @@
 	div h2{
 		color:#283544;
 	}
-
+	.descripcion-map{
+		color:#283544;
+		margin-left: 100px;
+	}
+	div a{
+		color:#102c63;
+	}
   </style>
 </head>
 <body id="myPage">
 	<nav class="navbar navbar-default">
 	  <div class="container">
 	    <div class="navbar-header">
-	    		      <img src="compufixlogo.png" class="img-responsive img-rounded" 
+	    		      <img src="./log-img/compufixlogo.png" class="img-responsive img-rounded" 
 	      style="display:inline;height:35px;width:46px;" alt="congreso">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 	        <span class="icon-bar"></span>
@@ -56,10 +62,10 @@
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="/PNET/Boostrap/Inicio.html">Inicio</a></li>
 	        <li><a href="#">Inscripción</a></li>
-	        <li><a href="#">Programa</a></li>
+	        <li><a href="/PNET/Boostrap/Programa.html">Programa</a></li>
 	        <li><a href="#">Ponentes</a></li>
-	        <li><a href="#">Localización</a></li>
-	        <li><a href="/PNET/Boostrap/Inicio.html#Contact">Contacto</a></li>
+	        <li><a href="/PNET/Boostrap/Localizacion.html">Localización</a></li>
+	        <li><a href="/PNET/Boostrap/Inicio.html">Contacto</a></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -70,28 +76,70 @@
 			<div class="col-sm-5 ">
 				<h2>Sede del Congreso 2019</h2><br>
 				<div class = "row">
-					<div class="col-sm-5 descripcion text-left">
+					<div class="col-sm-5 descripcion-map text-left">
 						<p>50 Nanyang Ave,<br>
 							Singapur 639798<br>
 							Singapur</p><br>
 					</div>
 				</div>
 				<h2>Hoteles recomendados</h2><br>
-				
+				<div class = "row ">
+					<div class="col-sm-3 descripcion-map text-left">
+						<a href="https://www.tripadvisor.es/Hotel_Review-g294265-d2535002-Reviews-Arena_Country_Club-Singapore.html">Arena Country<br> </a><p>5,0
+							<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso"></p> 
+	 					
+						<a href="https://www.booking.com/hotel/sg/gallop-kranji-farm-resort.en-gb.html?aid=318615&label=New_English_EN_ES_21457893385-TTKU5WNpzZlV3nreO8zMBgS288007979179%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-146342138710%3Adsa-64415224945%3Alp9049179%3Ali%3Adec%3Adm&sid=9a8c46472a6cf1c116f5b11956d7e958&srpvid=773d77c232d5001a&ucfs=1&srpvid=773d77c232d5001a&srepoch=1539709317&room1=A,A&hpos=1&hapos=1&dest_type=city&dest_id=-73635&srfid=40313b4ee9b9677bde3b1f51f04489c4a8ce7833X1&from=searchresults;highlight_room=#hotelTmpl">Gallop Kranji </a><p>4,0 
+							<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso"></p>
+					</div>
+					<div class="col-sm-3 descripcion-map text-left">
+						<a href="https://www.booking.com/hotel/sg/hotel-genting-jurong.en-gb.html?aid=311984;label=hotel-genting-jurong-K4WAR8Xywksc_0GA6nK5ugS162165899034%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-146342138230%3Akwd-75463885297%3Alp9049179%3Ali%3Adec%3Adm;sid=9a8c46472a6cf1c116f5b11956d7e958;dest_id=-73635;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1539709345;srfid=3d44f3dbee3f3fc291fc949b098eec4663b6298dX1;srpvid=48cf77d0dec8001b;type=total;ucfs=1&#hotelTmpl">Genting Hotel </a><p>4,0
+							<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+						</p>
+						<a href="https://www.booking.com/hotel/sg/riders-lodge.en-gb.html?aid=311984;label=hotel-25137-sg-9dlC0XcH8RsLNoh_18emvwS280230242879%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t3%3Aneg%3Afi%3Atiaud-146342138710%3Akwd-323422197075%3Alp9049179%3Ali%3Adec%3Adm;sid=9a8c46472a6cf1c116f5b11956d7e958;dest_id=-73635;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1539709272;srfid=863df7396a17c058d1eab9b20c2d13630e578ce9X1;srpvid=721977ab6c1101d0;type=total;ucfs=1&#hotelTmpl">Pegasus Hotel </a><p>4,0
+							<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+	      					<img src="./log-img/star.png" class="img-responsive img-rounded" 
+	      					style="display:inline;height:13px;width:13px;" alt="congreso">
+						</p>
+					</div>
+				</div>
+				<h2>Transporte Disponible</h2><br>
+				<div class = "row">
+					<div class="col-sm-8 descripcion-map text-center">
+						<a href="https://www.edreams.es/vuelos/singapur/SIN/?mktportal=google&gclid=CjwKCAjwmJbeBRBCEiwAAY4VVS0X295VlMxW1-vBibnJDk8FDVqqY5drR3KOwzMm4DvIRbVShUQroBoCUMwQAvD_BwE">Vuelos a Singapur desde España </a>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-5">
 				<!-- Add Google Maps -->
-				<div id="googleMap" style="height:500px;width:600px;"></div>
-				<script>
-					function myMap() {
-					var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-					var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-					var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-					var marker = new google.maps.Marker({position:myCenter});
-					marker.setMap(map);
-					}
-				</script>
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+				<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8954.362382929936!2d103.67935154224422!3d1.3474714261306069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0f0a99014463%3A0xb8bb0800c52d8219!2sNanyang+Technological+University!5e0!3m2!1sen!2ses!4v1539696408325" width="700" height="500" frameborder="0"  style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
