@@ -64,6 +64,26 @@
 	div p{
 		color:#283544;
 	}
+
+	#title1 {
+        display:inline;
+    }
+
+    #title2 {
+        display:none;
+    }
+    @media (max-width: 768px) {
+	    /* For mobile phones: */
+	    
+	    #title1 {
+        	display:none !important;
+    	}
+
+    	#title2 {
+        	display:inline;
+    	}
+
+	}
   </style>
 </head>
 <body id="myPage">
@@ -84,9 +104,9 @@
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#">Inicio</a></li>
-	        <li><a href="./inscripcion.html">Inscripción</a></li>
+	        <li><a href="./Inscripcion.html">Inscripción</a></li>
 	        <li><a href="./Programa.html">Programa</a></li>
-	        <li><a href="./ponentes.html">Ponentes</a></li>
+	        <li><a href="./Ponentes.html">Ponentes</a></li>
 	        <li><a href="./Localizacion.html">Localización</a></li>
 	        <li><a href="#Contact">Contacto</a></li>
 	      </ul>
@@ -95,8 +115,9 @@
 	</nav>
 	<div class="container-fluid bg-1 text-center" >
 		<div class="row">
-			<div class="col-sm-10">
-				<img src="./log-img/congreso.jpg" class="img-responsive img-rounded" style="display:inline" alt="congreso">
+			<div class="col-sm-10 ">
+				<img  id="title1" src="./log-img/congreso.jpg" class="img-responsive img-rounded"  alt="congreso">
+				<img  id="title2" src="./log-img/congreso-media.jpg" class="img-responsive img-rounded"  alt="congreso">
 				<p class="linea-parrafo" >La industria de la tecnología es un medio en el que se producen cambios 
 				frecuentemente, por ello es necesario estar al día de la actualidad tecnológica. Por este motivo
 			 	hemos decidido llevar acabo este IV Congreso Internacional de Programación e Innovación.</p><br>
