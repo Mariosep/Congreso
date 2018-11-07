@@ -1,137 +1,103 @@
 <!DOCTYPE html>
- 
+<html lang="es">
 <head>
-    <meta charset=utf-8"/>
-    <link href="ponentes.css" rel="stylesheet" type="text/css">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
+  <title>Inscripción</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">   
+    <link href="inscripcion.css" rel="stylesheet" type="text/css">
 
     <style>
-      .panel {
-          border: 1px solid #428bca; 
-        border-radius:0;
-          transition: box-shadow 0.5s;
-        }
-      .panel:hover {
-          box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-        }
-      .panel-footer .btn:hover {
-        border: 1px solid #f4511e;
-        background-color: #fff !important;
-        color: #f4511e;
+      .form-control::-webkit-input-placeholder {
+        color: #474747;
       }
-
-      .panel-heading {
-        color: #fff !important;
-        background-color: #428bca !important;
-        padding: 25px;
-        border-bottom: 1px solid transparent;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-      }
-
-      .panel-footer {
-        background-color: #fff !important;
-      }
-
-      .panel-footer h3 {
-        font-size: 32px;
-      }
-
-      .panel-footer h4 {
-        color: #aaa;
-        font-size: 14px;
-      }
-
-      .panel-footer .btn {
-        margin: 15px 0;
-        background-color: #428bca;
-        color: #fff;
-      }
-
     </style>
 </head>
 
-<body>
+<body id="myPage">
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+                <img src="./log-img/compufixlogo.png" class="img-responsive img-rounded" 
+        style="display:inline;height:35px;width:46px;" alt="congreso">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Portada</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Inscripción</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Programa</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Ponentes</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Localización</a>
-    </li>
-  </ul>
-</nav>
+        <a class="navbar-brand" href="#myPage">Congreso 2019</a>
 
-<section>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./Inicio.html">Inicio</a></li>
+          <li><a href="#">Inscripción</a></li>
+          <li><a href="./Programa.html">Programa</a></li>
+          <li><a href="./ponentes.html">Ponentes</a></li>
+          <li><a href="./Localizacion.html">Localización</a></li>
+          <li><a href="./Inicio.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class = "container-fluid bg-1">
   <div class="container">
-    <h5 class="display-4 text-dark">INSCRIPCIÓN</h5>
+    <h2 class="display-4 text-dark">INSCRIPCIÓN</h2>
   </div>
 
 
+  <form class="well form-horizontal" action="#" name="registration" style="background-color: #a1b2ce;border:0;-webkit-box-shadow: inset 0 0px 0px ;" onsubmit="return validarFormulario();">
 
-  <div class="container">
-       <table class="table table-striped">
+  <div class="container" >
+       <table class="table table-striped" >
           <tbody>
              <tr>
-                <td colspan="1">
-                   <form class="well form-horizontal">
-                      <fieldset>
+                <td colspan="1" style="background-color: #2f4c7a;border-top-left-radius: 6px;border-bottom-left-radius:6px;">
+                   
+                      <fieldset >
                          <div class="form-group">
-                            <label class="col-md-4 control-label">Nombre</label>
+                            <label style="color:#ffffff;" class="col-md-4 control-label" for="fullName">Nombre</label>
                             <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" class="form-control" required="true" value="" type="text"></div>
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" class="form-control"  value="" type="text" onclick="this.style.backgroundColor = '#ffffff';">
+                               </div>
+
                             </div>
                          </div>
                          <div class="form-group">
-                            <label class="col-md-4 control-label">Correo</label>
+                            <label style="color:#ffffff;" class="col-md-4 control-label" for="email">Correo</label>
                             <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="addressLine1" class="form-control" required="true" value="" type="text"></div>
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" class="form-control"  value="" type="text" onclick="this.style.backgroundColor = '#ffffff';"></div>
                             </div>
                          </div>
                          <div class="form-group">
-                            <label class="col-md-4 control-label">Localidad</label>
+                            <label style="color:#ffffff;" class="col-md-4 control-label" for="location">Localidad</label>
                             <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" name="addressLine2" class="form-control" required="true" value="" type="text"></div>
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="location" name="location" class="form-control"  value="" type="text" onclick="this.style.backgroundColor = '#ffffff';"></div>
                             </div>
                          </div>
                       </fieldset>
-                   </form>
+                   
                 </td>
-                <td colspan="1">
-                   <form class="well form-horizontal">
+                <td colspan="1" style="background-color: #2f4c7a;border-top-right-radius: 6px;border-bottom-right-radius:6px;">
+                   
                       <fieldset>
                          <div class="form-group">
-                            <label class="col-md-4 control-label">Teléfono</label>
+                            <label style="color:#ffffff;" class="col-md-4 control-label" for="tel">Teléfono</label>
                             <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" class="form-control" required="true" value="" type="text"></div>
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="tel" name="tel" class="form-control"  value="" type="text" onclick="this.style.backgroundColor = '#ffffff';"></div>
                             </div>
                          </div>
                          <div class="form-group">
-                            <label class="col-md-4 control-label">País</label>
+                            <label style="color:#ffffff;" class="col-md-4 control-label" for="country">País</label>
                             <div class="col-md-8 inputGroupContainer">
                                <div class="input-group">
                                   <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
-                                  <select class="selectpicker form-control">
-                                     <option>Selecciona tu país </option>
+                                  <select id="country" name="country" class="selectpicker form-control" onclick="this.style.backgroundColor = '#ffffff';">
+                                     <option value = "0">Selecciona tu país </option>
                                      <option value="AF">Afghanistan</option>
                                       <option value="AX">Åland Islands</option>
                                       <option value="AL">Albania</option>
@@ -362,13 +328,13 @@
                             </div>
                          </div>
                          <div class="form-group">
-                            <label class="col-md-4 control-label">Dirección</label>
+                            <label style="color:#ffffff;" class="col-md-4 control-label" for="dir">Dirección</label>
                             <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" name="addressLine2" class="form-control" required="true" value="" type="text"></div>
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span><input id="dir" name="dir" class="form-control"  value="" type="text" onclick="this.style.backgroundColor = '#ffffff';"></div>
                             </div>
                          </div>
                       </fieldset>
-                   </form>
+                   
                 </td>
              </tr>
           </tbody>
@@ -377,29 +343,29 @@
        <table class="table table-striped">
           <tbody>
              <tr>
-                <td colspan="1">
-                   <form class="well form-horizontal">
+                <td colspan="1" style="background-color: #2f4c7a;border-top-left-radius: 6px;border-bottom-left-radius:6px;">
+                   
                       <fieldset>
                          <div class="form-group">
-                            <label class="col-md-4 control-label">Fecha salida</label>
+                            <label style="color:#ffffff;" class="col-md-4 control-label" for="sourceDate">Fecha llegada</label>
                             <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" class="form-control" required="true" value="" type="text"></div>
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span><input id="sourceDate" name="sourceDate" class="form-control" placeholder="yyyy/mm/dd" value="" type="text" onclick="this.style.backgroundColor = '#ffffff';"></div>
                             </div>
                          </div>
                       </fieldset>
-                   </form>
+                   
                 </td>
-                <td colspan="1">
-                   <form class="well form-horizontal">
+                <td colspan="1" style="background-color: #2f4c7a;border-top-right-radius: 6px;border-bottom-right-radius:6px;">
+                   
                       <fieldset>
                          <div class="form-group">
-                            <label class="col-md-4 control-label">Fecha salida</label>
+                            <label style="color:#ffffff;" class="col-md-4 control-label" for="destDate">Fecha salida</label>
                             <div class="col-md-8 inputGroupContainer">
-                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" class="form-control" required="true" value="" type="text"></div>
+                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span><input id="destDate" name="destDate" class="form-control" placeholder="yyyy/mm/dd"  type="text" onclick="this.style.backgroundColor = '#ffffff';"></div>
                             </div>
                          </div>
                       </fieldset>
-                   </form>
+                   
                 </td>
              </tr>
           </tbody>
@@ -408,71 +374,105 @@
 
 
  <!-- Container (Pricing Section) -->
-<div class="container">
+<div class="container prices">
   <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
+    <h2>Precios</h2>
   </div>
   <div class="row">
-    <div class="col-4">
+    <div class="col-sm-4">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Basic</h1>
+          <h1>Básico</h1>
         </div>
         <div class="panel-body">
-          <p><strong>2</strong> Cursos</p>
-          <p><strong>2</strong> Talleres</p>
-          <p><strong>Todas las Charlas</strong> </p>
+          <p style="color:#283544"><strong>2</strong> Cursos</p>
+          <p style="color:#283544"><strong>2</strong> Talleres</p>
+          <p style="color:#283544"><strong>Todas las Charlas</strong> </p>
           <p class="text-danger"><strong>Sin comida incluida</strong></p>
           <p class="text-danger"><strong>Sin pase express</strong></p>
         </div>
         <div class="panel-footer">
           <h3>$39</h3>
-          <button class="btn btn-lg">Sign Up</button>
+          <button type="submit" class="btn btn-lg">Registrarse</button>
         </div>
       </div>      
     </div>     
-    <div class="col-4">
+    <div class="col-sm-4">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Pro</h1>
         </div>
         <div class="panel-body">
-          <p><strong>4</strong> Cursos</p>
-          <p><strong>3</strong> Talleres</p>
-          <p><strong>Todas las Charlas</strong> </p>
-          <p><strong>Con comida incluida</strong></p>
+          <p style="color:#283544"><strong>4</strong> Cursos</p>
+          <p style="color:#283544"><strong>3</strong> Talleres</p>
+          <p style="color:#283544"><strong>Todas las Charlas</strong> </p>
+          <p style="color:#283544"><strong>Con comida incluida</strong></p>
           <p class="text-danger"><strong>Sin pase express</strong></p>
         </div>
         <div class="panel-footer">
           <h3>$59</h3>
-          <button class="btn btn-lg">Sign Up</button>
+          <button type="submit" class="btn btn-lg">Registrarse</button>
         </div>
       </div>      
     </div>       
-    <div class="col-4">
+    <div class="col-sm-4">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h1>Premium</h1>
         </div>
         <div class="panel-body">
-          <p><strong>Todos los Cursos</strong></p>
-          <p><strong>Todos los Talleres</strong></p>
-          <p><strong>Todas las Charlas</strong> </p>
-          <p><strong>Con comida incluida</strong></p>
-          <p><strong>Con pase express</strong></p>
+          <p style="color:#283544"><strong>Todos los Cursos</strong></p>
+          <p style="color:#283544"><strong>Todos los Talleres</strong></p>
+          <p style="color:#283544"><strong>Todas las Charlas</strong> </p>
+          <p style="color:#283544"><strong>Con comida incluida</strong></p>
+          <p style="color:#283544"><strong>Con pase express</strong></p>
         </div>
         <div class="panel-footer">
           <h3>$89</h3>
-          <button class="btn btn-lg">Sign Up</button>
+          <button type="submit" class="btn btn-lg">Registrarse</button>
         </div>
       </div>      
     </div>    
   </div>
 </div>
-</section>
+</form>
+</div>
+<footer class="container-fluid bg-4 text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+    <p style="color:#ffffff">Realizado por Adrián Quirós Martín y Mario Sepúlveda Cornejo</p> 
+</footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+<script src="./form-validation.js"></script>
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== ""){
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+  </script>
 
 </body>
 

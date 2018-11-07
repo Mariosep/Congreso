@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <title>Congreso 2019</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
-  <link rel="stylesheet" type="text/css" href="estilo.css">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
   <style>
 	.navbar {
 		padding-top: 15px;
@@ -60,6 +61,9 @@
 	div h2{
 		color: #283544;
 	}
+	div p{
+		color:#283544;
+	}
   </style>
 </head>
 <body id="myPage">
@@ -80,16 +84,16 @@
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#">Inicio</a></li>
-	        <li><a href="#">Inscripción</a></li>
-	        <li><a href="/PNET/Boostrap/Programa.html">Programa</a></li>
-	        <li><a href="#">Ponentes</a></li>
-	        <li><a href="/PNET/Boostrap/Localizacion.html">Localización</a></li>
+	        <li><a href="./inscripcion.html">Inscripción</a></li>
+	        <li><a href="./Programa.html">Programa</a></li>
+	        <li><a href="./ponentes.html">Ponentes</a></li>
+	        <li><a href="./Localizacion.html">Localización</a></li>
 	        <li><a href="#Contact">Contacto</a></li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
-	<div class="container-fluid bg-1 text-center">
+	<div class="container-fluid bg-1 text-center" >
 		<div class="row">
 			<div class="col-sm-10">
 				<img src="./log-img/congreso.jpg" class="img-responsive img-rounded" style="display:inline" alt="congreso">
@@ -134,25 +138,27 @@
 				</div>
 			</div>
 			<div class="col-sm-2 container-fluid news">
-				<p>Noticias</p><br>
-				<div class="news-palet text-left">
-					<a href="#">NVIDIA mostrará su nueva GPU en su evento particular</a>
-					<img src="./not-img/not1.jpg" class="img-responsive" 
-	      			style="display:inline;height:122px;width:190px;" alt="congreso"><br><br>
-					<a href="#">Tendremos la nueva tecnología HDR de la mano de LG</a><br><br>
-					<img src="./not-img/not2.jpg" class="img-responsive" 
-	      			style="display:inline;height:122px;width:190px;" alt="congreso"><br><br>
-					<a href="#">5 tecnologías nuevas que podrás encontrar en este congreso</a><br><br>
-					<img src="./not-img/not3.jpg" class="img-responsive" 
-	      			style="display:inline;height:122px;width:190px;" alt="congreso"><br><br>
-				</div>
+				<aside>
+					<p style = "color:#ffffff;">Noticias</p><br>
+					<div class="news-palet text-center">
+						<p><a href="#">NVIDIA mostrará su nueva GPU</a></p>
+						<img src="./not-img/not1.jpg" class="img-responsive" 
+		      			style="display:inline;height:122px;width:190px;" alt="congreso"><br><br>
+						<a href="#">Tendremos la nueva tecnología HDR</a><br><br>
+						<img src="./not-img/not2.jpg" class="img-responsive" 
+		      			style="display:inline;height:122px;width:190px;" alt="congreso"><br><br>
+						<a href="#">5 tecnologías nuevas que podrás encontrar </a><br><br>
+						<img src="./not-img/not3.jpg" class="img-responsive" 
+		      			style="display:inline;height:122px;width:190px;" alt="congreso"><br><br>
+					</div>
+				</aside>
 		    </div>		
 		</div>
 
 	</div>
 
 	<div class="container-fluid bg-2 text-center">
-	  <h3>-Colaboradores-</h3>
+	  <h3 style="color:#283544">-Colaboradores-</h3>
 	  <div class="row">
 		    <div class="col-sm-4 ctop">
 		      	<img src="./col-img/1.png" class="img-responsive" style="display:inline" alt="Image">
@@ -210,7 +216,7 @@
 		<a href="#myPage" title="To Top">
     		<span class="glyphicon glyphicon-chevron-up"></span>
   		</a>
-		<p>Realizado por Adrián Quirós Martín y Mario Sepúlveda Cornejo</p> 
+		<p style="color:#ffffff">Realizado por Adrián Quirós Martín y Mario Sepúlveda Cornejo</p> 
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

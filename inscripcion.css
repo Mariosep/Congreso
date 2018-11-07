@@ -1,36 +1,101 @@
-section {
-  background-color: #cbd3e2; }
-  section .display-4 {
-    padding: 80px 0px 60px 0px; }
-  section .panel {
-    border: 1px solid #f4511e;
-    border-radius: 0;
-    transition: box-shadow 0.5s; }
-  section .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.2); }
-  section .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e; }
-  section .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px; }
-  section .panel-footer {
-    background-color: #fff !important; }
-  section .panel-footer h3 {
-    font-size: 32px; }
-  section .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px; }
-  section .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff; }
+ body {
+font: 20px Montserrat, sans-serif;
+line-height: 1.8;
+color: #f5f6f7;
+}
+.bg-1{
+  background-color: #a1b2ce; 
+}
 
-/*# sourceMappingURL=inscripcion.css.map */
+ .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        background-color: #213b5b;
+
+}
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+}
+
+.navbar-nav li a{
+  color: #ffffff !important;
+}
+
+.navbar-header a{
+  color: #ffffff !important;
+}
+.panel {
+    border: 1px solid #213b5b; 
+  border-radius:0;
+    transition: box-shadow 0.5s;
+  }
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+.panel-footer .btn:hover {
+  border: 1px solid #213b5b;
+  background-color: #fff !important;
+  color: #213b5b;
+}
+
+.panel-heading {
+  color: #fff !important;
+  background-color: #213b5b !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+  background-color: #fff !important;
+}
+
+.panel-footer h3 {
+  font-size: 32px;
+}
+
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #213b5b;
+  color: #fff;
+}
+div h2{
+  color:#283544;
+  font: 30px Montserrat, sans-serif;
+
+}
+
+div h3{
+  color:#283544;
+  font: 20px Montserrat, sans-serif;
+
+}
+.bg-4{
+  background-color: #32373d;
+  color: #ffffff;
+}
+.container-fluid {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.prices{
+
+padding-bottom: 30px;
+}
+form .error {
+  color: #ff0000;
+  font: 16px Montserrat, sans-serif;
+}
