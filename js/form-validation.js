@@ -7,6 +7,13 @@ function validarFormulario() {
           
           valid = false;
         }
+
+        if (!not_null.test(document.forms[0].apel.value)) {
+          document.forms[0].apel.placeholder = 'Introduzca los Apellidos';
+          document.forms[0].apel.style.backgroundColor = "#f7c5c5";
+          
+          valid = false;
+        }
         var email_val = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
         if (!email_val.test(document.forms[0].email.value)) {
           document.forms[0].email.value = '';
@@ -20,11 +27,19 @@ function validarFormulario() {
           valid = false;
         }
 
-        var tel_val = /^(\+34|0034|34)?[6|7|9|8][0-9]{8}$/;
+        var tel_val = /^(\+34|0034|34)?[9|8][0-9]{8}$/;
         if(!tel_val.test(document.forms[0].tel.value)){
           document.forms[0].tel.value = '';
           document.forms[0].tel.placeholder = 'Introduzca un teléfono válido';
           document.forms[0].tel.style.backgroundColor = "#f7c5c5";
+          valid = false;
+        }
+
+        var tel_mov = /^(\+34|0034|34)?[6|7|9|8][0-9]{8}$/;
+        if(!tel_mov.test(document.forms[0].tel.value)){
+          document.forms[0].telmov.value = '';
+          document.forms[0].telmov.placeholder = 'Introduzca un teléfono válido';
+          document.forms[0].telmov.style.backgroundColor = "#f7c5c5";
           valid = false;
         }
         
@@ -67,6 +82,24 @@ function validarFormulario() {
           $('html, body').animate({
           scrollTop: $("#myPage").offset().top
           }, 1500);
+        }else{
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:8080/users/",
+                contentType: "application/json",
+                dataType: "text",
+                data: JSON.stringify({
+                    "nombre": fullName,
+                    "apellidos": apel,
+                    "year": year
+                }),
+                success: function(data) {
+                    $("#resGetHello").html(data);
+                },
+                error: function(res) {
+                    alert("ERROR " + res.statusText);
+                }
+            });
         }
         return valid;
       }
